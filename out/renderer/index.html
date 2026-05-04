@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>业火红莲AI交互系统</title>
+    <script type="module" crossorigin src="./assets/index-CxNChQ25.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-N6K3Urrx.css">
+  </head>
+  <body>
+    <div id="loading">
+      <div class="spinner"></div>
+      <span>系统初始化中...</span>
+    </div>
+    <div id="context-menu" class="hidden">
+      <div class="menu-item" id="menu-chat"><span class="mi">◈</span>启动对话</div>
+      <div class="menu-item" id="menu-settings"><span class="mi">⚙</span>系统设置</div>
+      <div class="menu-divider"></div>
+      <div class="menu-item" id="menu-dance"><span class="mi">◉</span>启动舞蹈</div>
+      <div class="menu-item" id="menu-idle"><span class="mi">○</span>待机模式</div>
+      <div class="menu-item" id="menu-next-model"><span class="mi">◇</span>切换核心</div>
+      <div class="menu-divider"></div>
+      <div class="menu-label">⚡ 文件处理单元</div>
+      <div class="menu-item" id="menu-organize"><span class="mi">▣</span>自动整理</div>
+      <div class="menu-item" id="menu-compress-img"><span class="mi">◐</span>图像压缩</div>
+      <div class="menu-item" id="menu-compress-video"><span class="mi">◑</span>视频处理</div>
+      <div class="menu-divider"></div>
+      <div class="menu-item menu-danger" id="menu-close"><span class="mi">×</span>系统关闭</div>
+    </div>
+    <div id="fmp-overlay" class="hidden"></div>
+    <div id="file-mode-picker" class="hidden">
+      <div class="fmp-title" id="fmp-title">选择处理模式</div>
+      <div class="fmp-btns">
+        <button class="fmp-btn" id="fmp-folder">▣ 批量处理</button>
+        <button class="fmp-btn" id="fmp-file">◐ 单体操作</button>
+      </div>
+      <button class="fmp-cancel" id="fmp-cancel">× 取消</button>
+    </div>
+    <div id="speech-bubble" class="hidden">
+      <div class="bubble-dots" id="bubble-dots"><span></span><span></span><span></span></div>
+      <div id="bubble-text"></div>
+    </div>
+    <div id="mini-input-container" class="hidden">
+      <input id="mini-input" type="text" placeholder="> 输入指令..." maxlength="100" />
+      <button id="btn-mini-close">×</button>
+    </div>
+    <div id="stt-indicator" class="hidden">
+      <span class="stt-dot"></span>
+      <span id="stt-label">◉ 语音识别中</span>
+    </div>
+    <canvas id="canvas"></canvas>
+  </body>
+</html>
