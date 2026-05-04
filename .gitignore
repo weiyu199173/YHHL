@@ -6,16 +6,10 @@ build/
 .env
 .env.local
 *.local
-out/renderer/assets/*.mp3
-out/renderer/assets/*.css
-out/renderer/assets/*.js
-!out/renderer/assets/index-*.js
-!out/renderer/assets/index-*.css
-动作资产/
-角色模型/
-sounds/
-*.vrma
+
+# VRM模型文件过大（158MB），需要使用Git LFS或从其他链接下载
 *.vrm
-*.mp3
-*.mp4
+角色模型/
+
+# 设计文件过大（20MB）
 *.zip
